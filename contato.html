@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Entre em contato - Elaborata</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Roboto:400,700|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
+    <!-- Deve-se chamar sua folha de estilo personalizada por ultimo. a ordem das CSS alterarão o resultado.
+    Para que voce possa sobrepor classes do bootstrap, sua css deve ser carregada por último. -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- menu principal de navegaçao -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" name="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#menu-principal" aria-expanded="false">
+          <span class"sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand"> <img width="162" height="30" src="http://www.elaborata.com.br/img/logo-elaborata.svg" alt="" /></a>
+        </div>
+        <!-- menu de navegação visivel. Lista de links -->
+        <div class="callapse navbar-collapse" id="menu-principal">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="treinamentos.html" title="Conheça os treinamentos da Elaborata">Treinamentos</a></li>
+              <li><a href="locacao-de-salas.html" title="aluguel de Salas de Treinamento">Locação de Salas</a></li>
+              <li><a href="sobre-a-elaborata.html" title="Conheça a Elaborata">A Elaborata</a></li>
+              <li><a href="vagas-de-empregos.html" title="Oportunidades de empregos na area de TI">Mural de Vagas</a></li>
+              <li><a href="contato.html" title="Entre em contato com a Elaborata">Contato</a></li>
+          </ul>
+        </div>
+        <!-- menu de navegação visivel. Lista de links -->
+      </div>
+    </nav>
+    <!-- menu principal de navegaçao.-->
+
+<!-- div principal para todo o conteudo (container) -->
+  <div class="container">
+    <!-- rodapé -->
+    <!-- mapa incorporado do google para ser exibido na pagina de contato -->
+    <br>
+    <br>
+    <div class="row">
+      <div class="vol-md-12">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.177667380278!2d-49.272515485576605!3d-25.432323039211404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce46cf2958ead%3A0xacef6a68b37f39ee!2sElaborata+Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1475277395206" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- mapa incorporado do google para ser exibido na pagina de contato -->
+
+    <!-- formulario de contato -->
+    <div class="row">
+    <div class="col-md-8 col-md-offset-2"> <!-- classe col-md-offset-'?' desloca a coluna 'x grades para a direita' -->
+
+      <form action="index.html" method="post" nome="formulario-contato">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Por favor digite seu nome completo">
+          <p class="help-block"></p> <!-- apenas para campos que necessitam de informações adicionais -->
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" placeholder="(41)0000-0000">
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required> <!-- required obriga o usuario a preencher determinado campo -->
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" rows="8" cols="40" class="form-control" placeholder="Digite sua mensagem aqui"></textarea>
+          <!-- form-control(propriedade de formatação do bootstrap) -->
+        </div>
+        <!-- botao submit. Imput com o tipo submit -->
+        <div class="form-group">
+          <input type="submit" class="btn btn-primary" value="Enviar!">
+        </div>
+      </form>
+    </div>
+      </div>
+    <!-- formulario de contato -->
+
+    <!-- rodapé -->
+  <div class="row">
+    <div class="col-md-6">
+      <address class="">
+        <h5>Nome da Empresa S/A</h5>
+        <p>Rua Monsenhor Celso, 256</p>
+        <p><abbr title="Telefone">Tel:</abbr><a href="tel:55555">(41)55555</a></p>
+        <a href="mailto:cursos@eleborata.com.br">cursos@elaborata.com.br</a>
+        <p><a href="skype:seuloginskype?call">Meu Skype</a></p>
+        <a href="whatsapp://send" data-text="testo a ser compartilhado" data-href="https://www.elaborata.com" class="wa_btn wa_btn_m"><i class="fa fa-whasapp fa-lg"></i></a>
+      </address>
+    </div>
+      <div class="col-md-6 text-right">
+        <a href="https://fb.com/minhapagina"><i class="fa fa-facebook-square"></i></a>
+          <a href="https://twiiter.com"><i class="fa fa-twitter-square"></i></a>
+          <a href="https://linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+          <a href="https://instagram.com"><i class="fa fa-pinterest-square"></i></a>
+      </div>
+  <!-- rodapé -->
+   </div> <!-- fecha container -->
+<!-- div principal para todo o conteudo (container) -->
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
